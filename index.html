@@ -1,0 +1,171 @@
+<!--  
+  Tess Thomas
+  10/15/2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Topsail</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;700;800;900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="hero__content">
+        <header>
+          <div class="menu-btn">
+            <span>Menu </span>
+            <svg
+              class="menu-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 30 30"
+              fill="none"
+            >
+              <line
+                x1="15"
+                y1="4.37114e-08"
+                x2="15"
+                y2="30"
+                stroke="currentColor"
+                stroke-width="2"
+              ></line>
+              <line
+                x1="30"
+                y1="15"
+                y2="15"
+                stroke="currentColor"
+                stroke-width="2"
+              ></line>
+            </svg>
+          </div>
+
+          <div class="overlay"></div>
+
+          <div class="header-logo">
+            <a href="index.html" class="logo__link"
+              ><img src="./images/ts-logo-white.svg" alt="Visit Topsail Logo"
+            /></a>
+          </div>
+
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Directions</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="slant">
+          <h1 class="cursive">Topsail Beach</h1>
+          <p class="cursive state">North Carolina</p>
+        </div>
+        <div class="quote">
+          <q>Best Little Beach Town in the USA</q>
+          <div class="reviews">
+            <div class="stars">
+              <img src="./images/star.svg" alt="4.5 out of 5 stars" />
+              <img src="./images/star.svg" alt="" />
+              <img src="./images/star.svg" alt="" />
+              <img src="./images/star.svg" alt="" />
+              <img src="./images/star-half.svg" alt="" class="half" />
+            </div>
+            <p>- Trip Advisor</p>
+          </div>
+        </div>
+        <a href="faq.html" class="btn faq">VISITOR FAQ</a>
+      </div>
+    </div>
+
+    <div class="container activities">
+      <h2>
+        A sea turtle sanctuary, beach bum's paradise, and surf fisher's dream.
+      </h2>
+      <a href="activities.html" class="btn">ACTIVITIES</a>
+    </div>
+
+    <div class="container carousel">
+      <div class="carousel__wrapper">
+        <div class="slider">
+          <img
+            class="slide s1"
+            src="./images/ts-seaturtle.jpg"
+            alt="fisherman holds giant redfish while standing in boat"
+          />
+          <img
+            class="slide s2"
+            src="./images/redfish-stock-photo-happy-fishermans-holds-up-big-redfish.jpg"
+            alt="sea turtle on beach"
+          />
+          <img
+            class="slide s3"
+            src="./images/crab-pexels-mark-stebnicki-2252617.jpg"
+            alt="dolphins swimming through ocean water"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container history">
+      <h2>
+        Home of the Missiles and More Museum, the WWII Bunker... and
+        Blackbeard's treasure?
+      </h2>
+      <a href="history.html" class="btn">HISTORY</a>
+    </div>
+
+    <footer>
+      <div class="footer container">
+        <div class="footer__logo">
+          <img src="./images/ts-logo-black.svg" alt="Visit Topsail Logo" />
+        </div>
+
+        <div class="footer__links">
+          <ul>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Directions</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__credit">
+          <p>Site created by:</p>
+          <p class="arsenal">Tess Thomas</p>
+          <!-- <p>Follow Us:</p>
+          <a href="#"
+            ><i class="fab fa-facebook fa-lg" style="color: #F1D27A"></i></i
+          ></a>
+          <a href="#"></a>
+            <i class="fab fa-instagram-square fa-lg" style="color: #F1D27A;"></i
+          ></a>
+          <a href="#"><i class="fab fa-twitter fa-lg" style="color: #F1D27A;  opacity: 1;"></i></a> -->
+        </div>
+
+        <address class="footer__address">
+          <p>
+            820 S. Anderson Blvd,<br />
+            Topsail Beach, NC<br />
+            28445
+          </p>
+          <p>Phone: <a href="tel:910-328-5841">(910) 328-5841</a></p>
+        </address>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
