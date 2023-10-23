@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>History | Tops'l</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History | Tops'l</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;700;800;900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <span>Menu </span>
+        <svg
+          class="menu-icon"
+          width="20"
+          height="20"
+          viewBox="0 0 30 30"
+          fill="none"
+        >
+          <line
+            x1="15"
+            y1="4.37114e-08"
+            x2="15"
+            y2="30"
+            stroke="currentColor"
+            stroke-width="2"
+          ></line>
+          <line
+            x1="30"
+            y1="15"
+            y2="15"
+            stroke="currentColor"
+            stroke-width="2"
+          ></line>
+        </svg>
+      </div>
+
+      <div class="overlay"></div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="faq.html#map-anchor">Directions</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="history-grid">
+      <h1>Our History</h1>
+    </main>
+
+    <button onclick="scrollUp()" class="scroll-btn" title="Go to top">
+      Top
+    </button>
+
+    <footer>
+      <div class="footer container">
+        <div class="footer__logo">
+          <img src="./images/ts-logo-black.svg" alt="Visit Topsail Logo" />
+        </div>
+
+        <div class="footer__links">
+          <ul>
+            <li><a href="#">Activities</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Directions</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__credit">
+          <p>Site created by:</p>
+          <p class="arsenal">Tess Thomas</p>
+          <!-- <p>Follow Us:</p>
+          <a href="#"
+            ><i class="fab fa-facebook fa-lg" style="color: #F1D27A"></i></i
+          ></a>
+          <a href="#"></a>
+            <i class="fab fa-instagram-square fa-lg" style="color: #F1D27A;"></i
+          ></a>
+          <a href="#"><i class="fab fa-twitter fa-lg" style="color: #F1D27A;  opacity: 1;"></i></a> -->
+        </div>
+
+        <address class="footer__address">
+          <p>
+            820 S. Anderson Blvd,<br />
+            Topsail Beach, NC<br />
+            28445
+          </p>
+          <p>Phone: <a href="tel:910-328-5841">(910) 328-5841</a></p>
+        </address>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

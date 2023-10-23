@@ -157,6 +157,26 @@ header span {
   display: block;
 }
 
+/* Scroll Button */
+.scroll-btn {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(51, 51, 51, .75);
+  color: var(--white);
+  cursor: pointer;
+  padding: .5em;
+  border-radius: 50%;
+}
+
+.scroll-btn:hover {
+  background-color: var(--black);
+}
+
 /* Hero */
 .hero {
   width: 100%;
