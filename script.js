@@ -36,3 +36,25 @@ function moveSlider() {
 }
 
 window.addEventListener('scroll', moveSlider);
+
+// Scroll button
+const scrollBtn = document.querySelector('.scroll-btn');
+
+// When user scrolls down 40px from top, show button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    scrollBtn.style.display = 'block';
+  } else {
+    scrollBtn.style.display = 'none';
+  }
+}
+
+// When user clicks button, scroll to top
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
