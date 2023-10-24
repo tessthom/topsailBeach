@@ -38,7 +38,7 @@ function moveSlider() {
 window.addEventListener('scroll', moveSlider);
 
 // Scroll button
-const scrollBtn = document.querySelector('.scroll-btn');
+let scrollBtn = document.querySelector('.scroll-btn');
 
 // When user scrolls down 40px from top, show button
 window.onscroll = function () {
@@ -55,6 +55,20 @@ function scrollFunction() {
 
 // When user clicks button, scroll to top
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  // set scroll per frame
+  const scrollStep = -window.scrollY / (400 / 15);
+
+  // scroll animation
+  function scrollAnimation() {
+    if (window.scrollY > 0) {
+      window.scrollBy(0, scrollStep);
+      requestAnimationFrame(scrollAnimation);
+    }
+  }
+
+  // call scroll animation
+  requestAnimationFrame(scrollAnimation);
 }
+
+// Event listener for scroll button
+scrollBtn.addEventListener('click', topFunction);

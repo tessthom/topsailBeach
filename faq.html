@@ -43,8 +43,15 @@
 
       <div class="overlay"></div>
 
+      <div class="header-logo">
+        <a href="index.html" class="logo__link"
+          ><img src="./images/ts-logo-white.svg" alt="Visit Topsail Logo"
+        /></a>
+      </div>
+
       <nav class="nav-menu">
         <ul>
+          <li class="home-li"><a href="index.html">Home</a></li>
           <li><a href="activities.html">Activities</a></li>
           <li><a href="history.html">History</a></li>
           <li><a href="#map-anchor">Directions</a></li>
@@ -53,17 +60,126 @@
       </nav>
     </header>
 
-    <main class="faq-grid">
-      <h1>Frequently Asked Questions</h1>
+    <main class="faq-grid faq">
+      <div class="faq-hero">
+        <h1>How Can We Help?</h1>
+        <img
+          src="./images/windsurfing_sports_water_sports.jpg"
+          alt="group of wind surfers"
+        />
+      </div>
 
-      <section>
+      <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-list">
+          <details>
+            <summary>Can I drive a golf card in Topsail Beach?</summary>
+            Golf Carts are not permitted to operate on any state or town owned
+            streets within the Town of Topsail Beach. Low-speed vehicles
+            designated and registered as such by the North Carolina Department
+            of Motor Vehicles are permitted on streets or roadways where the
+            posted speed limit is no greater than 35 mph other than North or
+            South Anderson which may only be used to cross over to another
+            street. However, low speed vehicles are allowed in the 25 mph zone
+            of S Anderson in the business district of Topsail Beach.
+          </details>
+
+          <details>
+            <summary>
+              Can I build a fire on the beach?
+            </summary>
+            No, Open fires on the beach are not allowed. Cooking on the beach
+            using a charcoal grill or similar device is allowed.
+          </dd>
+          </details>
+
+          <details>
+            <summary>
+              Is riding a horse on the beach allowed?
+            </summary>
+            Beach Access Permits will NOT be available this year in Topsail
+            Beach due to a Beach Renourishment project set to begin this Fall.
+            Beach Access Permits are normally sold between October 1st and
+            January 15th for vehicles and between October 1st and March 30th for
+            horses each year. Due to the impending project, Commissioners
+            determined that in the best interest of the project, horses and
+            vehicles will not be permitted on the beach this year. The Town
+            fully expects to make Beach Access Permits available next year
+            during the 2024-2025 season. Horses and their owners possessing
+            valid town permits are allowed on the beach strand during the period
+            beginning on October 1st of each year and ending on March 30th of
+            the next year. Permits are issued by the Topsail Beach Police
+            Department, 812 S. Anderson Blvd.,Topsail Beach. For more
+            information, contact the Police Department at 910-328-4851.
+          </details>
+
+          <details>
+            <summary>
+              Are dogs allowed on the beach?
+            </summary>
+            Yes, dogs are allowed, but all dogs must be on a leash (no longer
+            than 20ft) when off its own property limits from the period between
+            May 15 through September 30 of each year. Additionally, all dogs
+            must be on a leash from April 1 through September 30 of each year in
+            the area designated as Coastal Barrier Resources System (CBRS) Unit
+            L07 by the United States Fish and Wildlife Service and as clearly
+            marked by the Town. The person must always be prepared to remove any
+            "deposits" left by the dog. These regulations apply to the entire
+            town including the beach.
+          </details>
+
+          <details>
+            <summary>
+              Can I get married on the beach?
+          </summary>
+          The Town of Topsail Beach welcomes anyone who would like to have a
+            beach wedding. There is no charge and no permit is required unless
+            you plan to use amplification equipment during your event, including
+            ceremony and reception. Outdoor Entertainment Permits require
+            approval by the Town Manager and the Chief of Police not less than
+            one day in advance of the event date. During the tourist season, May
+            through September, parking will be limited. The wedding party and
+            guests should be aware that the public's access to the beach cannot
+            be restricted for the wedding, cars must be parked completely off
+            all paved streets and walking on or disturbing the dunes is not
+            allowed. Contact the Topsail Beach Police Department at 910-328-4851
+            and advise of your event date, location, and contact information in
+            case of an emergency.
+          </details>
+
+          <details>
+            <summary>
+              How do I obtain a burn permit?
+            </summary>
+            Burn Permits are required for all outdoor burning. The only
+            exceptions are: 1. Grill fires for the purpose of cooking food; and
+            2. Fires in metal drums (e.g., 55-gallon) on construction sites,
+            provided they are used to warm workers and/or tools and are
+            completely extinguished before the last worker leaves the site. Burn
+            Permits are issued by the Fire Department and Police Department.
+            There is no fee for the permit. For a complete list of Regulations
+            please see section 12-8 - Burning regulations of the Town Code.
+          </details>
+
+          <details>
+            <summary>
+              Where in Topsail Beach is paid parking required?
+            </summary>
+            Only in the south-end parking lot on the sound side (next to the
+            Serenity Point Townhomes at the end of Shore Line Dr and Inlet Dr).
+          </details>
+        </div>
+      </section>
+
+      <section class="get-here">
         <h2 id="map-anchor">Get Here</h2>
         <div class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52687.41006530221!2d-77.67440676298284!3d34.37685801831007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a99718ae0ce033%3A0x6db64b89dda5ec1b!2sTopsail%20Beach%2C%20NC!5e0!3m2!1sen!2sus!4v1698074833122!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            style="border: 0"
+            width="100%"
+            height="100%"
+            style="border: 3px solid #f97b61"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -72,8 +188,8 @@
       </section>
     </main>
 
-    <button onclick="scrollFunction()" class="scroll-btn" title="Go to top">
-      Top
+    <button onclick="topFunction()" class="scroll-btn" title="Go to top">
+      <i class="arrow-up"></i>
     </button>
 
     <footer>
@@ -105,12 +221,12 @@
         </div>
 
         <address class="footer__address">
+          <p>Phone: <a href="tel:910-328-5841">(910) 328-5841</a></p>
           <p>
             820 S. Anderson Blvd,<br />
             Topsail Beach, NC<br />
             28445
           </p>
-          <p>Phone: <a href="tel:910-328-5841">(910) 328-5841</a></p>
         </address>
       </div>
     </footer>
